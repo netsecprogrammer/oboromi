@@ -11,7 +11,7 @@ You'll need:
 - **CMake** latest version
 - **Ninja** (`winget install Ninja-Build.Ninja` on Windows, or your package manager on Linux/macOS)
 - **C++ compiler**: MSVC on Windows (via Visual Studio 2022/2026 Build Tools), Clang on Linux/macOS
-- **Qt 6** (6.12.0 or later recommended)
+- **Qt 6** (CI uses 6.10.3)
 
 ### installing Qt
 
@@ -39,7 +39,7 @@ Tell CMake where Qt is installed via `CMAKE_PREFIX_PATH`:
 
 **Windows (adjust the path to your Qt install):**
 ```bash
-cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="C:/Qt/6.12.0/msvc2022_64"
+cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="C:/Qt/6.10.3/msvc2022_64"
 ```
 
 **Linux:**
