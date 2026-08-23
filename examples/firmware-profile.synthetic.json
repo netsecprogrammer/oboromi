@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "platform": "synthetic",
+  "firmware_version": "synthetic-0",
+  "provenance": {
+    "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "extraction_tool": "oboromi-fixture",
+    "extraction_tool_version": "1.0",
+    "confidence": "synthetic"
+  },
+  "hardware": {
+    "core_count": 8,
+    "memory_size": 12884901888,
+    "page_size": 4096
+  },
+  "programs": [
+    {
+      "program_id": "0x0000000000000001",
+      "build_id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "capabilities": [
+        "synthetic:test"
+      ],
+      "client_services": [
+        "demo:u"
+      ],
+      "server_services": [
+        "demo:u"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "name": "demo:u",
+      "owner_program_id": "0x0000000000000001",
+      "minimum_firmware": null,
+      "maximum_firmware": null
+    }
+  ]
+}

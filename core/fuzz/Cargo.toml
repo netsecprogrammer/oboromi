@@ -1,0 +1,29 @@
+[package]
+name = "oboromi-core-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2024"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+oboromi-core = { path = ".." }
+
+[[bin]]
+name = "hipc_header"
+path = "fuzz_targets/hipc_header.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "nso_parser"
+path = "fuzz_targets/nso_parser.rs"
+test = false
+doc = false
+bench = false
+
+[workspace]
+members = ["."]
