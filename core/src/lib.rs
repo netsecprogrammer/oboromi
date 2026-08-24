@@ -1,7 +1,10 @@
 pub mod cpu;
 pub mod ffi;
+pub mod firmware;
 pub mod fs;
 pub mod gpu;
+pub mod loader;
+pub mod memory;
 pub mod tests;
 pub mod nn;
 pub mod sys;
