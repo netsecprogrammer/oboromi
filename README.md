@@ -49,3 +49,5 @@ Build and test the core:
     cargo test --locked --lib
 
 Build the Qt GUI from the repository root with CMake. See [core/fuzz/README.md](core/fuzz/README.md) for parser fuzzing and [docs/firmware-profiles.md](docs/firmware-profiles.md) for the profile and loader formats.
+
+The Linux release uses system Qt and is not self-contained. Windows and macOS release jobs deploy Qt with the application, but the resulting artifacts are unsigned and macOS bundles are not notarized.
